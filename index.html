@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script> $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+        $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+    </script>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body class="isl"><div>
+    <div>
+    <h3 class="card-panel white center-align DMA_head">DEVELOPER MANAGER APPLICATION</h3>
+    </div>
+    <div class="white f_dev">
+        <h4 class="card-panel white center-align">DEVELOPERS</h4>
+        <a href="form.html" class="btn btn-small waves-effect blue" target="_blank" id="devAdd">Add a Developer</a>
+    </div>
+        <div id='developer_section'>
+        
+        </div>
+    <!--update modal structure -->
+    <!-- Modal Trigger -->
+ 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="center-align card-panel isl white-text">Update developer</h4>
+       <div class="section"></div>
+        <form action="index.html" onsubmit="updateDeveloper()">
+            <div class="input-field fields">
+            <input placeholder="Enter your name" id="ufirst_name" type="text" class="validate" required>
+          <label for="first_name">Name</label>
+            </div><div class="input-field fields">
+            <input placeholder="Enter your email" id="uemail" type="email" class="validate"  required>
+          <label for="email">Email</label>
+            </div>
+            <div class="input-field fields">
+            <input placeholder="Enter Designation" id="udesignation" type="text" class="validate" required>
+          <label for="designation">Designation</label>
+            </div><div class="input-field fields">
+            <input placeholder="Enter your Github" id="ugithub" type="url" class="validate" required>
+          <label for="github">Enter Github Account</label>
+            </div>
+        <button type="submit" class="modal-close waves-effect isl white-text btn-flat u_c">Update</button>
+        </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect isl white-text btn-flat">Cancel</a>
+      
+    </div>
+  </div>
+    </div>
+</body>
+    <script src="DMA.js"></script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="form.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet">
+    <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+</head>
+<body class="isl whiteee">
+
+    <div class="container">
+    <div class="row">
+        <div class="col s12 m8 l7 offset-l3 offset-m2 white whiteee">
+            <div class="container">  <!--Coded by Node -->
+                
+        <h4 class="center-align">Developer Manager Application
+        </h4>
+                <form onsubmit="add_developer()" action="index.html">
+                <div class="section"></div>
+            <div class="input-field fields">
+            <input placeholder="Enter your name" id="first_name" type="text" class="validate" required>
+          <label for="first_name">Name</label>
+            </div><div class="input-field fields">
+            <input placeholder="Enter your email" id="email" type="email" class="validate"  required>
+          <label for="email">Email</label>
+            </div>
+            <div class="input-field fields">
+            <input placeholder="Enter Designation" id="designation" type="text" class="validate" required>
+          <label for="designation">Designation</label>
+            </div><div class="input-field fields">
+            <input placeholder="Enter your Github" id="github" type="url" class="validate" required>
+          <label for="github">Enter Github Account</label>
+            </div>
+            
+                   <button class="btn button_field center-align waves-effect waves-light sub_btn ksb btn-large" id="submitd" type="submit"><div class="inner_block"> Submit<i class="material-icons right myIcon">trending_flat</i></div>
+          </button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+    <script src="DMA.js"></script>
+</html>
